@@ -7,7 +7,10 @@ import Service from './pages/service.jsx'
 import ClassComponent from './pages/ClassComponent.jsx'
 import ClassLifeCycle from './pages/classLifeCycle.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-
+import Query from './pages/Query.jsx'
+import StateHook from './pages/stateHook.jsx'
+import BallState from './pages/BallState.jsx'
+import Reduceer from './pages/Reduceer.jsx'
 
 
 function App() {
@@ -32,6 +35,21 @@ function App() {
     {
     element: <ClassLifeCycle/>,
     path: '/classLifeCycle'
+    },
+    {
+      element: <Query/>,
+      path: '/Query'
+    },
+    {
+      element: <StateHook/>,
+      path: '/stateHook'
+    },
+    {
+      element: <BallState/>,
+      path: '/BallState'
+    },{
+      element: <Reduceer/>,
+      path: '/Reducer'
     }
   ])
 

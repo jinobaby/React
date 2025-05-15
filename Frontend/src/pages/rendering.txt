@@ -1,0 +1,34 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+var hi = ReactDOM.createRoot(document.getElementById('root'))
+
+function Firsttag() {
+  let u = {
+    first_name: "John",
+    last_name: "Doe"
+  }
+  let place = 'New York';
+  
+  var hep = React.createElement('h2', {style: {
+    color: 'blue',
+    fontSize: '20px'
+  }}, 'Place :' + place)
+
+  var nameShowCase = React.createElement('h2', { style: {
+    color: 'red',
+    fontSize: '20px'
+  }}, 'First Name: ' + u.first_name + ', Last Name: ' + u.last_name )
+
+  return (
+    <div>
+      {nameShowCase}
+      <h1>{ place }</h1>
+      {hep}
+    </div>
+  )
+}
+
+hi.render(
+  <Firsttag/>
+)
