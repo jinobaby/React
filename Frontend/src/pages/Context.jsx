@@ -1,6 +1,6 @@
 import React, { useContext, createContext } from 'react'
 const Create = createContext();
-
+1
 function Context() {
     const name = "Jino"
   return (

@@ -6,11 +6,14 @@ var CounterSlice = createSlice({
         data: []
     },
     reducers: {
-        AddData:(state, action) => {
+        AddData: (state, action) => {
             state.data.push(action.payload);
+        },
+        RemoveData: (state, action) => {
+            state.data = []
         }
     }   
 })
 
-export const { AddData } = CounterSlice.actions //exporting the action
+export const { AddData, RemoveData } = CounterSlice.actions //exporting the action
 export default CounterSlice.reducer //exporting the reducer
