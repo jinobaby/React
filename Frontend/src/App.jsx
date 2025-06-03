@@ -20,6 +20,7 @@ import ArrayData from './pages/ArrayData.jsx'
 import GetApi from './pages/GetApi.jsx'
 import StudyRedux from './pages/StudyRedux.jsx'
 import GetApiImages from './pages/GetApiImages.jsx'
+import Person from './pages/Person.jsx'
 
 
 function App() {
@@ -95,6 +96,10 @@ function App() {
     {
       element: <GetApiImages/>,
       path: '/GetApiImages'
+    },
+    {
+      element: <Person/>,
+      path: '/Person'
     }
   ])
 

@@ -13,6 +13,7 @@ function Navbar() {
         <Link className='Navbar-Links' to={"/About"}>About</Link>
         <Link className='Navbar-Links' to={"/Service"}>Service</Link>
         <Link className='Navbar-Links' to={"/classLifeCycle"}>classLifeCycle</Link>
+        <Link className='Navbar-Links' to={"/Person"}>Person</Link>
 
         </section>
 
