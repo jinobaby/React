@@ -21,7 +21,8 @@ import GetApi from './pages/GetApi.jsx'
 import StudyRedux from './pages/StudyRedux.jsx'
 import GetApiImages from './pages/GetApiImages.jsx'
 import Person from './pages/Person.jsx'
-
+import Designn from './pages/Designn.jsx'
+ 
 
 function App() {
 
@@ -100,6 +101,10 @@ function App() {
     {
       element: <Person/>,
       path: '/Person'
+    }, 
+    {
+      element: <Designn/>,
+      path: '/Designn'
     }
   ])
 
